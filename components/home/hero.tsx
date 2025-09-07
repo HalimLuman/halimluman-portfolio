@@ -75,7 +75,7 @@ const Hero = () => {
         className="absolute inset-0 pointer-events-none z-0"
         style={{
           background:
-            "radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(251,191,36,0.04), transparent 15%)",
+            "radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.1), transparent 15%)",
         }}
       />
 
@@ -87,7 +87,7 @@ const Hero = () => {
             ref={(el) => {
               if (el) orbsRef.current[i] = el;
             }}
-            className="absolute w-16 h-16 rounded-full bg-gradient-to-tr from-amber-500/10 to-white/5 backdrop-blur-md"
+            className="absolute w-16 h-16 rounded-full bg-gradient-to-tr from-gray-500/10 to-white/5 backdrop-blur-md"
             style={{
               top: `${Math.random() * 80}%`,
               left: `${Math.random() * 80}%`,
@@ -106,7 +106,7 @@ const Hero = () => {
           height={420}
           priority
         />
-        <div className="absolute inset-0 rounded-full bg-amber-600 opacity-20 blur-3xl"></div>
+        <div className="absolute inset-0 rounded-full bg-gray-600 opacity-20 blur-3xl"></div>
       </div>
 
       {/* Radial gradient for depth */}
@@ -116,10 +116,9 @@ const Hero = () => {
       <div className="relative z-20 flex flex-col w-full mx-auto bottom-6 mt-20 gap-10 px-6 lg:px-8 text-center lg:text-left">
         {/* Name */}
         <div ref={nameRef}>
-          <span className="text-xl font-semibold tracking-[0.35em] text-amber-500">
+          <span className="text-lg font-extrabold tracking-widest text-amber-700">
             HALIM LUMAN
           </span>
-          <div className="h-0.25 w-36 mx-auto lg:mx-0 bg-gradient-to-r from-amber-500 to-transparent mt-2"></div>
         </div>
 
         {/* Title */}
@@ -127,8 +126,10 @@ const Hero = () => {
           ref={titleRef}
           className="text-5xl lg:text-7xl font-semibold tracking-tight text-white leading-snug mx-auto lg:mx-0"
         >
-          Web Developer <span className="text-amber-500 font-light">/</span>{" "}
-          Software Tester
+          Web Developer&nbsp;/&nbsp;
+          <span className=" text-stroke-1 text-transparent">
+            Software Tester
+          </span>
         </h1>
 
         {/* Subtitle + Link */}
@@ -136,10 +137,9 @@ const Hero = () => {
           ref={subtitleRef}
           className="flex flex-col lg:flex-row items-center lg:items-start justify-between max-w-5xl"
         >
-          <p className="text-gray-300 max-w-2xl text-lg leading-relaxed">
-            Crafting digital experiences with precision and warmth — merging
-            design, development, and testing into interfaces that feel
-            timeless.
+          <p className="text-gray-300 max-w-3xl text-lg leading-relaxed">
+            Crafting digital experiences with precision and warmth, merging
+            design, development, and testing into interfaces that feel timeless.
           </p>
         </div>
       </div>
