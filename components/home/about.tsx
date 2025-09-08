@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <div
-      className="relative w-full py-20 flex items-center px-6 lg:px-20 bg-white justify-center gap-10 "
+      className="relative w-full py-20 flex items-center px-6 lg:px-20 justify-center gap-10"
     >
       {/* Vertical ABOUT label */}
       <div className="hidden sm:flex justify-center items-center relative w-1/7">

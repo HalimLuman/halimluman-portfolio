@@ -97,7 +97,7 @@ const Hero = () => {
       </div>
 
       {/* Background image with subtle glow */}
-      <div className="absolute right-0 bottom-0 opacity-15 w-[520px] h-[520px] z-50">
+      <div className="absolute right-0 bottom-0 opacity-20 w-[520px] h-[520px]">
         <Image
           src="/side-headshot-removebg-preview.png"
           alt="Silhouette of Halim"

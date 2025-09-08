@@ -1,6 +1,7 @@
 import About from "@/components/home/about";
 import Hero from "@/components/home/hero";
 import Navbar from "@/components/home/navbar";
+import Services from "@/components/home/services";
 
 const Home = () => {
   return (
@@ -14,9 +15,8 @@ const Home = () => {
       {/* Scrollable Content */}
       <div className="relative z-20 mt-[100vh] bg-white rounded-t-2xl border-2">
         <About />
-        {/* Add Experience, Tech Stack, Projects here */}
+        <Services />
       </div>
-      <div className="h-[1000px]">sad</div>
     </div>
   );
 };
